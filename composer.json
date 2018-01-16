@@ -1,7 +1,7 @@
 {
     "name": "codefuze/lisk-composer",
     "description": "Lisk Composer is a Lisk API package for use in Laravel and PHP composer projects",
-    "keywords": [],
+    "keywords": ["lisk", "php", "cryptocurrency", "laravel"],
     "homepage": "https://github.com/codefuze/lisk-composer",
     "authors": [
         {
