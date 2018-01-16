@@ -1,0 +1,30 @@
+{
+    "name": "codefuze/lisk-composer",
+    "description": "Lisk Composer is a Lisk API package for use in Laravel and PHP composer projects",
+    "keywords": [],
+    "homepage": "https://github.com/codefuze/lisk-composer",
+    "authors": [
+        {
+            "name": "skulls",
+            "email": "skulls@codefuze.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.5",
+		"guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+       "psr-4": {
+            "Codefuze\\Lisk\\": "src/Lisk"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codefuze\\Lisk\\LiskServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT"
+
+}
