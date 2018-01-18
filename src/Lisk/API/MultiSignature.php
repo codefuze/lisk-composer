@@ -12,7 +12,7 @@ class MultiSignature
 		$this->client = $client;
 	}
 
-	public function getMultisignatures($secret, $lifetime, $min, $keysgroup, $secondSecret = null)
+	public function createMultisignatures($secret, $lifetime, $min, $keysgroup, $secondSecret = null)
 	{
 		try {
 			$payload = [
@@ -31,9 +31,9 @@ class MultiSignature
 		}
 	}
 
-	public function multisignatures($secret, $lifetime, $min, $keysgroup, $secondSecret = null)
+	public function create($secret, $lifetime, $min, $keysgroup, $secondSecret = null)
 	{
-		return $this->getMultisignatures($secret, $lifetime, $min, $keysgroup, $secondSecret);
+		return $this->createMultisignatures($secret, $lifetime, $min, $keysgroup, $secondSecret);
 	}
 
 	public function getAccounts($publicKey)
