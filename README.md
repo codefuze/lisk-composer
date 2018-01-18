@@ -80,7 +80,7 @@ Feel free to fork, post issues, or submit PRs.
 
 ### Todos
  - [x] Complete all API endpoints
- - [ ] Complete documentation
+ - [x] Complete documentation
  - [ ] Unit testing
  - [ ] Artisan commands
 
