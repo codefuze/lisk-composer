@@ -19,7 +19,7 @@ Lisk Composer is a Lisk API package for use in Laravel and PHP composer projects
 After you have met the above requirements you can install Lisk Composer into your project using the following command in you project root:
 
 ```sh
-$ composer require codefuze/lisk-composer
+$ composer require "codefuze/lisk-composer:5.5.*"
 ```
 
 > Laravel >= 5.5 supports auto-discovery does **not** require you to add service proiders or aliases > to your configs, however if you are having issues you can add them to your **config/app.php** file
