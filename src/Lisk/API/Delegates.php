@@ -12,7 +12,7 @@ class Delegates
 		$this->client = $client;
 	}
 
-	public function enableDelegate($secret, $secondSecret = null, $username = null)
+	public function enableDelegate($secret, $username, $secondSecret = null)
 	{
 		try {
 			$payload = [
@@ -34,7 +34,7 @@ class Delegates
 		}
 	}
 
-	public function enable($secret, $secondSecret = null, $username = null)
+	public function enable($secret, $username, $secondSecret = null)
 	{
 		return $this->enableDelegate($secret, $secondSecret, $username);
 	}
@@ -190,6 +190,8 @@ class Delegates
 			if($generatorPublicKey !== null)
 			{
 				$parameters['generatorPublicKey'] = $generatorPublicKey;
+			} else {
+				throw new \Exception('You must include a generator public key!');
 			}
 			if($start !== null)
 			{
